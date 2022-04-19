@@ -17,7 +17,8 @@ namespace CloneClownAPI.Models
         [Column("already sent")]
         public bool alreadySent { get; set; }
 
-        //public Users user { get; set; }
+        public virtual Users user { get; set; }
+        public virtual Configs config { get; set; }
 
     }
 }

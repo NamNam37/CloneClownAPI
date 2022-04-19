@@ -23,8 +23,8 @@ namespace CloneClownAPI.Models
         public bool isZIP { get; set; }
 
         //public virtual List<Users> users { get; set; }
-        //public virtual List<Logs> logs { get; set; }
-        //public virtual List<SourceF> sources { get; set; }
-        //public virtual List<DestF> dests { get; set; }
+        public virtual List<Logs> logs { get; set; }
+        public virtual List<SourceF> sources { get; set; }
+        public virtual List<DestF> dests { get; set; }
     }
 }

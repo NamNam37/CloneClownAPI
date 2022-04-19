@@ -18,5 +18,6 @@ namespace CloneClownAPI.Models
         public string type { get; set; }
 
         public virtual FTP FTP { get; set; }
+        public virtual Configs config { get; set; }
     }
 }

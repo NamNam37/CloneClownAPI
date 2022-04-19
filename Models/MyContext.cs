@@ -23,6 +23,26 @@ namespace CloneClownAPI.Models
                 .HasOne(a => a.FTP)
                 .WithOne(a => a.DestF)
                 .HasForeignKey<FTP>(a => a.destID);
+
+            modelBuilder.Entity<Users>()
+                .HasMany(a => a.logs)
+                .WithOne(a => a.user)
+                .HasForeignKey(a => a.userID);
+
+            modelBuilder.Entity<Configs>()
+                .HasMany(a => a.logs)
+                .WithOne(a => a.config)
+                .HasForeignKey(a => a.configID);
+
+            modelBuilder.Entity<Configs>()
+                .HasMany(a => a.sources)
+                .WithOne(a => a.config)
+                .HasForeignKey(a => a.configID);
+
+            modelBuilder.Entity<Configs>()
+                .HasMany(a => a.dests)
+                .WithOne(a => a.config)
+                .HasForeignKey(a => a.configID);
         }
     }
 }

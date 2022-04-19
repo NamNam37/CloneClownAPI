@@ -10,5 +10,6 @@ namespace CloneClownAPI.Models
         public int id { get; set; }
         public int configID { get; set; }
         public string path { get; set; }
+        public virtual Configs config { get; set; }
     }
 }
