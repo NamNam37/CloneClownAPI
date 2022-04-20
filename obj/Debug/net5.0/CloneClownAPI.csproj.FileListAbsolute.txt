@@ -584,3 +584,6 @@ F:\CLONECLOWN\CloneClownAPI\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.genrunt
 D:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 D:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+F:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+F:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+F:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

@@ -8,7 +8,7 @@ namespace CloneClownAPI.Models
         public DbSet<Configs> configs { get; set; }
         public DbSet<Admins> admins { get; set; }
         public DbSet<Logs> logs { get; set; }
-        public DbSet<UC> UC { get; set; }
+        public DbSet<ConfigsUsers> ConfigsUsers { get; set; }
         public DbSet<SourceF> sourceF { get; set; }
         public DbSet<DestF> destF { get; set; }
         public DbSet<FTP> ftp { get; set; }
@@ -43,6 +43,23 @@ namespace CloneClownAPI.Models
                 .HasMany(a => a.dests)
                 .WithOne(a => a.config)
                 .HasForeignKey(a => a.configID);
+
+            modelBuilder.Entity<Configs>()
+            .HasMany(p => p.users)
+            .WithMany(p => p.configs)
+            .UsingEntity<ConfigsUsers>(
+                j => j
+                    .HasOne(pt => pt.user)
+                    .WithMany(t => t.configsUsers)
+                    .HasForeignKey(pt => pt.userID),
+                j => j
+                    .HasOne(pt => pt.config)
+                    .WithMany(p => p.configsUsers)
+                    .HasForeignKey(pt => pt.configID),
+                j =>
+                {
+                    j.HasKey(t => new { t.configID, t.userID });
+                });
         }
     }
 }

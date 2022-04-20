@@ -15,7 +15,9 @@ namespace CloneClownAPI.Models
         [Column("last backup")]
         public DateTime last_backup { get; set; }
 
-        //public virtual List<Configs> configs { get; set; }
+        public virtual ICollection<Configs> configs { get; set; }
+        public virtual ICollection<ConfigsUsers> configsUsers { get; set; }
         public virtual ICollection<Logs> logs { get; set; }
+        
     }
 }
