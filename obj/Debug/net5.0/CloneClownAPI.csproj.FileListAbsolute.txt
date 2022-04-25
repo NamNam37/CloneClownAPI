@@ -150,7 +150,6 @@ E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\CloneClownAPI.deps.js
 E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\CloneClownAPI.runtimeconfig.json
 E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\CloneClownAPI.runtimeconfig.dev.json
 E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\CloneClownAPI.dll
-E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\ref\CloneClownAPI.dll
 E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\CloneClownAPI.pdb
 E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\BouncyCastle.Crypto.dll
 E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\Castle.Core.dll
@@ -281,7 +280,6 @@ E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.csproj.
 E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.MvcApplicationPartsAssemblyInfo.cs
 E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.MvcApplicationPartsAssemblyInfo.cache
 E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\obj\Debug\net5.0\staticwebassets\CloneClownAPI.StaticWebAssets.Manifest.cache
-E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\obj\Debug\net5.0\staticwebassets\CloneClownAPI.StaticWebAssets.xml
 E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\obj\Debug\net5.0\scopedcss\bundle\CloneClownAPI.styles.css
 E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.RazorTargetAssemblyInfo.cache
 E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.csproj.CopyComplete
@@ -587,3 +585,7 @@ D:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\Newtonsoft.Json.Bson.
 F:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 F:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 F:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+E:\CLONECLOWN\CloneClownAPI\CloneClownAPI\obj\Debug\net5.0\refint\CloneClownAPI.dll

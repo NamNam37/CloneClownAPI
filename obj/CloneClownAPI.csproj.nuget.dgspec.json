@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "F:\\CLONECLOWN\\CloneClownAPI\\CloneClownAPI\\CloneClownAPI.csproj": {}
+    "E:\\CLONECLOWN\\CloneClownAPI\\CloneClownAPI\\CloneClownAPI.csproj": {}
   },
   "projects": {
-    "F:\\CLONECLOWN\\CloneClownAPI\\CloneClownAPI\\CloneClownAPI.csproj": {
+    "E:\\CLONECLOWN\\CloneClownAPI\\CloneClownAPI\\CloneClownAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\CLONECLOWN\\CloneClownAPI\\CloneClownAPI\\CloneClownAPI.csproj",
+        "projectUniqueName": "E:\\CLONECLOWN\\CloneClownAPI\\CloneClownAPI\\CloneClownAPI.csproj",
         "projectName": "CloneClownAPI",
-        "projectPath": "F:\\CLONECLOWN\\CloneClownAPI\\CloneClownAPI\\CloneClownAPI.csproj",
+        "projectPath": "E:\\CLONECLOWN\\CloneClownAPI\\CloneClownAPI\\CloneClownAPI.csproj",
         "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "F:\\CLONECLOWN\\CloneClownAPI\\CloneClownAPI\\obj\\",
+        "outputPath": "E:\\CLONECLOWN\\CloneClownAPI\\CloneClownAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -95,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

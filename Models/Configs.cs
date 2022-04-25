@@ -8,6 +8,7 @@ namespace CloneClownAPI.Models
     public class Configs
     {
         public int id { get; set; }
+        public string configName { get; set; }
         [Column("last used")]
         public DateTime last_used { get; set; }
         public string schedule { get; set; }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EP2IhJ32qnezYTH6ByRzdpSsbDIuAMLCBgMdL3/I4DJCMxBx9st/8VU9uofkUMGlWTYLLZ163vJX1V70+n4KIQ==",
+  "dgSpecHash": "KIUvo6VVYsZgef+xPN1YCm+zOOVD+ZVLzMFt2ZFzxYzXgcnCngxc90sUMbC8vai+TtDOB0yVMJ+8kvbQ4EdS6A==",
   "success": true,
-  "projectFilePath": "F:\\CLONECLOWN\\CloneClownAPI\\CloneClownAPI\\CloneClownAPI.csproj",
+  "projectFilePath": "E:\\CLONECLOWN\\CloneClownAPI\\CloneClownAPI\\CloneClownAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\david\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",

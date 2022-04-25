@@ -38,9 +38,13 @@ namespace CloneClownAPI.Controllers
         public void Update(int id, Configs config)
         {
             Configs db = this.context.configs.Find(id);
-            db.id = config.id;
+            db.configName = config.configName;
             db.schedule = config.schedule;
             db.last_used = config.last_used;
+            db.type = config.type;
+            db.backupCount = config.backupCount;
+            db.packageCount = config.packageCount;
+            db.isZIP = config.isZIP;
 
             this.context.SaveChanges();
         }
