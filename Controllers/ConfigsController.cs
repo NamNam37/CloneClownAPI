@@ -12,9 +12,14 @@ namespace CloneClownAPI.Controllers
         private MyContext context = new MyContext();
 
         [HttpGet]
-        public List<Configs> Get()
+        public List<Configs> Get(string name)
         {
-            return this.context.configs.ToList();
+             IEnumerable<Configs> result = this.context.configs;
+
+            if (name != null)
+                result = result.Where(x => x.configName == name);
+
+            return result.ToList();
         }
 
         [HttpGet]
@@ -45,6 +50,8 @@ namespace CloneClownAPI.Controllers
             db.backupCount = config.backupCount;
             db.packageCount = config.packageCount;
             db.isZIP = config.isZIP;
+            db.sources = config.sources;
+            db.dests = db.dests;
 
             this.context.SaveChanges();
         }

@@ -16,6 +16,7 @@ namespace CloneClownAPI.Models
         {
             optionsBuilder.UseLazyLoadingProxies();
             optionsBuilder.UseMySQL("server=mysqlstudenti.litv.sssvt.cz;database=3c1_pychadavid_db1;user=pychadavid;password=123456;SslMode=none");
+            optionsBuilder.EnableSensitiveDataLogging();
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

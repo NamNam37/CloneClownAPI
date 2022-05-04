@@ -12,9 +12,14 @@ namespace CloneClownAPI.Controllers
         private MyContext context = new MyContext();
 
         [HttpGet]
-        public List<SourceF> Get()
+        public List<SourceF> Get(string path)
         {
-            return this.context.sourceF.ToList();
+            IEnumerable<SourceF> result = this.context.sourceF;
+
+            if (path != null)
+                result = result.Where(x => x.path == path);
+
+            return result.ToList();
         }
 
         [HttpGet]
