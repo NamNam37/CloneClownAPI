@@ -597,7 +597,6 @@ C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\bin\Debug\net5.0\CloneClownAPI.d
 C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\bin\Debug\net5.0\CloneClownAPI.runtimeconfig.json
 C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\bin\Debug\net5.0\CloneClownAPI.runtimeconfig.dev.json
 C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\bin\Debug\net5.0\CloneClownAPI.dll
-C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\bin\Debug\net5.0\ref\CloneClownAPI.dll
 C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\bin\Debug\net5.0\CloneClownAPI.pdb
 C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\bin\Debug\net5.0\BouncyCastle.Crypto.dll
 C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\bin\Debug\net5.0\Castle.Core.dll
@@ -731,7 +730,6 @@ C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.c
 C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\staticwebassets\CloneClownAPI.StaticWebAssets.Manifest.cache
-C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\staticwebassets\CloneClownAPI.StaticWebAssets.xml
 C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\scopedcss\bundle\CloneClownAPI.styles.css
 C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.RazorTargetAssemblyInfo.cache
 C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.csproj.CopyComplete
@@ -740,3 +738,4 @@ C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\ref\CloneClownA
 C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.pdb
 C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.genruntimeconfig.cache
 C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\bin\Debug\net5.0\JWT.dll
+C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\refint\CloneClownAPI.dll
