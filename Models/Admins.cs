@@ -10,12 +10,10 @@ namespace CloneClownAPI.Models
         public int id { get; set; }
         public string username { get; set; }
         public string password { get; set; }
-        [Column("profile picture")]
         public string pfp { get; set; }
-        public string mail { get; set; }
-        [Column("include errors")]
+        public string email { get; set; }
+        public int mailsSent { get; set; }
         public bool errors { get; set; }
-        [Column("include successes")]
         public bool successes { get; set; }
         public string schedule { get; set; }
     }

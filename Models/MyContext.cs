@@ -1,17 +1,18 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace CloneClownAPI.Models
 {
     public class MyContext : DbContext
     {
         public DbSet<Users> users { get; set; }
+        public IEnumerable<object> Users { get; internal set; }
         public DbSet<Configs> configs { get; set; }
         public DbSet<Admins> admins { get; set; }
         public DbSet<Logs> logs { get; set; }
         public DbSet<ConfigsUsers> ConfigsUsers { get; set; }
         public DbSet<SourceF> sourceF { get; set; }
         public DbSet<DestF> destF { get; set; }
-        public DbSet<FTP> ftp { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseLazyLoadingProxies();
@@ -20,10 +21,6 @@ namespace CloneClownAPI.Models
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<DestF>()
-                .HasOne(a => a.FTP)
-                .WithOne(a => a.DestF)
-                .HasForeignKey<FTP>(a => a.destID);
 
             modelBuilder.Entity<Users>()
                 .HasMany(a => a.logs)

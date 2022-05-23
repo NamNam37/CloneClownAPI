@@ -13,6 +13,8 @@ namespace CloneClownAPI.Models
         public bool online { get; set; }
         [Column("last backup")]
         public DateTime last_backup { get; set; }
+        public bool verified { get; set; }
+        public int minutesOnline { get; set; }
 
         public virtual ICollection<Configs> configs { get; set; }
         public virtual ICollection<ConfigsUsers> configsUsers { get; set; }

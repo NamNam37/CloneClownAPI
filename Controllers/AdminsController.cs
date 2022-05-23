@@ -42,7 +42,7 @@ namespace CloneClownAPI.Controllers
             db.username = admin.username;
             db.password = admin.password;
             db.pfp = admin.pfp;
-            db.mail = admin.mail;
+            db.email = admin.email;
             db.errors = admin.errors;
             db.successes = admin.successes;
 
