@@ -23,7 +23,7 @@ namespace CloneClownAPI.Models
             return JwtBuilder.Create()
                       .WithAlgorithm(new HMACSHA256Algorithm()) // symmetric
                       .WithSecret(SECRET)
-                      .AddClaim("exp", DateTimeOffset.UtcNow.AddDays(2).ToUnixTimeSeconds())
+                      .AddClaim("exp", DateTimeOffset.UtcNow.AddHours(12).ToUnixTimeSeconds())
                       .AddClaim("admin_id", admin.id)
                       .Encode();
         }

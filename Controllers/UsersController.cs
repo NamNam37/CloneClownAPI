@@ -48,6 +48,8 @@ namespace CloneClownAPI.Controllers
             db.online = user.online;
             db.last_backup = user.last_backup;
             db.logs = user.logs;
+            db.minutesOnline = user.minutesOnline;
+            db.verified = user.verified;
             db.configsUsers.ToList().ForEach(x => this.context.ConfigsUsers.Remove(x));
             db.configsUsers = user.configs.Select(x => new ConfigsUsers() { configID = x.id, userID = id }).ToList();
 
@@ -60,6 +62,7 @@ namespace CloneClownAPI.Controllers
         {
             Users user = this.context.users.Find(id);
             this.context.users.Remove(user);
+            this.context.configs.ToList().ForEach(x => this.context.ConfigsUsers.Remove(new ConfigsUsers() { configID = x.id, userID = id }));
             this.context.SaveChanges();
         }
     }
