@@ -50,8 +50,12 @@ namespace CloneClownAPI.Controllers
             db.backupCount = config.backupCount;
             db.packageCount = config.packageCount;
             db.isZIP = config.isZIP;
+
+            this.context.sourceF.ToList().RemoveAll(a => a.configID == config.id);
             db.sources = config.sources;
-            db.dests = db.dests;
+
+            this.context.destF.ToList().RemoveAll(a => a.configID == config.id);
+            db.dests = config.dests;
 
             this.context.SaveChanges();
         }
