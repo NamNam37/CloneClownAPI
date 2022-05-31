@@ -738,7 +738,6 @@ C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\ref\CloneClownA
 C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.pdb
 C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.genruntimeconfig.cache
 C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\bin\Debug\net5.0\JWT.dll
-C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\refint\CloneClownAPI.dll
 C:\Users\pychadavid\Documents\GitHub\CloneClownAPI\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\pychadavid\Documents\GitHub\CloneClownAPI\bin\Debug\net5.0\appsettings.json
 C:\Users\pychadavid\Documents\GitHub\CloneClownAPI\bin\Debug\net5.0\CloneClownAPI.exe
@@ -889,3 +888,5 @@ C:\Users\pychadavid\Documents\GitHub\CloneClownAPI\obj\Debug\net5.0\CloneClownAP
 C:\Users\pychadavid\Documents\GitHub\CloneClownAPI\obj\Debug\net5.0\ref\CloneClownAPI.dll
 C:\Users\pychadavid\Documents\GitHub\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.pdb
 C:\Users\pychadavid\Documents\GitHub\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.genruntimeconfig.cache
+C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\bin\Debug\net5.0\ref\CloneClownAPI.dll
+C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\staticwebassets\CloneClownAPI.StaticWebAssets.xml
