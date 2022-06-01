@@ -50,10 +50,19 @@ namespace CloneClownAPI.Controllers
 
         [HttpDelete]
         [Route("{id}")]
-        public void Delete(int id)
+        public void Delete(int id, bool removeAll)
         {
-            Logs log = this.context.logs.Find(id);
-            this.context.logs.Remove(log);
+            if (!removeAll)
+            {
+                Logs log = this.context.logs.Find(id);
+                this.context.logs.Remove(log);
+            }
+            
+            if (removeAll)
+            {
+                this.context.logs.ToList().ForEach(a => this.context.logs.Remove(a));
+            }
+
             this.context.SaveChanges();
         }
     }
