@@ -17,6 +17,20 @@ namespace CloneClownAPI.Controllers
         {
             return this.context.users.ToList();
         }
+        [HttpGet]
+        [Route("dashboard/online-users")]
+        public string GetOnlineUsers()
+        {
+            return $"{this.context.users.Where(a => a.online).Count()}/{this.context.users.Count()}";
+        }
+
+        [HttpGet]
+        [Route("dashboard/unverified-users")]
+        public int GetUnverifiedUsers()
+        {
+            return this.context.users.Where(a => !a.verified).Count();
+        }
+
 
         [HttpGet]
         [Route("{id}")]

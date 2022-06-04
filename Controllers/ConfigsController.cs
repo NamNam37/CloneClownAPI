@@ -1,5 +1,6 @@
 ﻿using CloneClownAPI.Models;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -20,6 +21,38 @@ namespace CloneClownAPI.Controllers
                 result = result.Where(x => x.configName == name);
 
             return result.ToList();
+        }
+        [HttpGet]
+        [Route("dashboard/config-count")]
+        public int GetConfigCount()
+        {
+            return this.context.configs.Count();
+        }
+        [HttpGet]
+        [Route("dashboard/average-last-backup")]
+        public string GetConfigAverageDateTime()
+        {
+            double count = this.context.configs.Count();
+            List<DateTime> dates = new List<DateTime>();
+            this.context.configs.ToList().ForEach(a => dates.Add(a.last_used));
+            double temp = 0d;
+            for (int i = 0; i < count; i++)
+            {
+                temp += dates[i].Ticks / count;
+            }
+            DateTime tempdate = new DateTime((long)temp);
+            TimeSpan result = DateTime.Now - tempdate;
+            return $"{result.Days} Days and {result.Hours} Hours";
+        }
+
+        [HttpGet]
+        [Route("dashboard/avg-configs")]
+        public float GetAverageConfigs()
+        {
+            int countCnfg = 0;
+            this.context.users.ToList().ForEach(a => countCnfg += a.configs.Count);
+
+            return (float)countCnfg / (float)this.context.users.Count();
         }
 
         [HttpGet]
@@ -65,6 +98,9 @@ namespace CloneClownAPI.Controllers
         public void Delete(int id)
         {
             Configs config = this.context.configs.Find(id);
+            this.context.sourceF.ToList().RemoveAll(a => a.configID == config.id);
+
+            this.context.destF.ToList().RemoveAll(a => a.configID == config.id);
             this.context.configs.Remove(config);
             this.context.SaveChanges();
         }
