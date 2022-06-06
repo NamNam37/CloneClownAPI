@@ -888,5 +888,4 @@ C:\Users\pychadavid\Documents\GitHub\CloneClownAPI\obj\Debug\net5.0\CloneClownAP
 C:\Users\pychadavid\Documents\GitHub\CloneClownAPI\obj\Debug\net5.0\ref\CloneClownAPI.dll
 C:\Users\pychadavid\Documents\GitHub\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.pdb
 C:\Users\pychadavid\Documents\GitHub\CloneClownAPI\obj\Debug\net5.0\CloneClownAPI.genruntimeconfig.cache
-C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\bin\Debug\net5.0\ref\CloneClownAPI.dll
-C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\staticwebassets\CloneClownAPI.StaticWebAssets.xml
+C:\Users\david\Desktop\CLONECLOWN\CloneClownAPI\obj\Debug\net5.0\refint\CloneClownAPI.dll

@@ -102,6 +102,8 @@ namespace CloneClownAPI.Controllers
 
             this.context.destF.ToList().RemoveAll(a => a.configID == config.id);
             this.context.configs.Remove(config);
+            this.context.users.ToList().Where(a => a.id == id).ToList().ForEach(a => this.context.users.Remove(a));
+            this.context.ConfigsUsers.ToList().Where(a => a.configID == id).ToList().ForEach(a => this.context.ConfigsUsers.Remove(a));
             this.context.SaveChanges();
         }
     }
