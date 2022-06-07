@@ -1,12 +1,13 @@
+
+using CloneClownAPI.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Quartz;
+using Quartz.Impl;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,7 @@ namespace CloneClownAPI
         }
 
         public IConfiguration Configuration { get; }
+        public IScheduler scheduler;
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -45,6 +47,42 @@ namespace CloneClownAPI
                     }
                 );
             });
+
+            StdSchedulerFactory factory = new StdSchedulerFactory();
+            scheduler = factory.GetScheduler().Result;
+            scheduler.Start().Wait();
+
+            ConfigureJobs().Wait();
+        }
+        public async Task ConfigureJobs() 
+        {
+            MyContext context = new MyContext();
+            List<Admins> admins = context.admins.ToList();
+            foreach (Admins admin in admins)
+            {
+
+                List<string> parts = admin.schedule.Split(" ").ToList();
+                if (parts[2] == "*")
+                    parts[2] = "?";
+                else
+                    parts[4] = "?";
+
+                string cron = string.Join(" ", parts);
+                cron = "0 " + cron;
+
+                IJobDetail job = JobBuilder.Create<MailJob>()
+                    .WithIdentity($"{admin.username}_job")
+                    .UsingJobData("adminId", admin.id)
+                    .Build();
+
+                ITrigger trigger = TriggerBuilder.Create()
+                    .WithIdentity($"{admin.username}_trigger_job")
+                    .StartNow()
+                    .WithCronSchedule(cron)
+                    .Build();
+
+                scheduler.ScheduleJob(job, trigger).Wait();
+            }
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,13 +98,10 @@ namespace CloneClownAPI
             app.UseRouting();
             app.UseCors();
 
-            app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
-
         }
     }
 }

@@ -1,24 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pychadavid\\Downloads\\CloneClown\\CloneClownAPI\\CloneClownAPI.csproj": {}
+    "C:\\Users\\david\\Desktop\\CLONECLOWN\\CloneClownAPI\\CloneClownAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pychadavid\\Downloads\\CloneClown\\CloneClownAPI\\CloneClownAPI.csproj": {
+    "C:\\Users\\david\\Desktop\\CLONECLOWN\\CloneClownAPI\\CloneClownAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pychadavid\\Downloads\\CloneClown\\CloneClownAPI\\CloneClownAPI.csproj",
+        "projectUniqueName": "C:\\Users\\david\\Desktop\\CLONECLOWN\\CloneClownAPI\\CloneClownAPI.csproj",
         "projectName": "CloneClownAPI",
-        "projectPath": "C:\\Users\\pychadavid\\Downloads\\CloneClown\\CloneClownAPI\\CloneClownAPI.csproj",
-        "packagesPath": "C:\\Users\\pychadavid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pychadavid\\Downloads\\CloneClown\\CloneClownAPI\\obj\\",
+        "projectPath": "C:\\Users\\david\\Desktop\\CLONECLOWN\\CloneClownAPI\\CloneClownAPI.csproj",
+        "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\david\\Desktop\\CLONECLOWN\\CloneClownAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\pychadavid\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -69,9 +72,17 @@
               "target": "Package",
               "version": "[5.0.2, )"
             },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.29, )"
+            },
             "MySql.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.10, )"
+            },
+            "Quartz": {
+              "target": "Package",
+              "version": "[3.4.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -96,7 +107,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }
